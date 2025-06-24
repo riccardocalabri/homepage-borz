@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Borz Cucine Industriali</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./images/BorzLogo.png" type="image/jpeg">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-lg py-2">
+        <div class="container">
+            <a class="navbar-brand m-1" href="">
+                <img src="./images/BorzLogo.png" alt="Logo Borz" class="img-fluid m-2" style="max-height:60px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item m-2">
+                        <a href="https://www.borz.it/" target="_blank">
+                            Clicca qui per visitare il negozio online!
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto d-flex flex-column flex-lg-row align-items-center">
+                    <li class="nav-item px-2 py-1 m-2">
+                        <a href="tel:+390464437719" class="small d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fcb800"
+                                class="bi bi-telephone-fill me-1" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                            </svg>
+                            +39 0464 437719
+                        </a>
+                    </li>
+                    <li class="nav-item px-2 py-1 m-2">
+                        <a href="mailto:info@borz.it" class="small d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fcb800"
+                                class="bi bi-envelope-fill me-1" viewBox="0 0 16 16">
+                                <path
+                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                            </svg>
+                            info@borz.it
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="heroCarousel" class="carousel slide carousel-fade shadow-lg mb-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active"
+                style="height:80vh; background:url('/images/carousel1.jpg') center/cover;">
+                <div class="carousel-caption d-block text-start">
+                    <h2 style="color: #fcb800;">Attrezzatura per cottura professionale</h2>
+                    <p>Le migliori soluzioni per ristoranti, hotel e mense aziendali</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="height:80vh; background:url('/images/carousel2.jpg') center/cover;">
+                <div class="carousel-caption d-block text-center">
+                    <h2 style="color: #fcb800;">Esperti in attrezzature per la ristorazione</h2>
+                    <p>Consulenza specializzata per ogni esigenza di ristorazione professionale</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="height:80vh; background:url('/images/carousel3.jpg') center/cover;">
+                <div class="carousel-caption d-block text-end">
+                    <h2 style="color: #fcb800;">I migliori brand del settore</h2>
+                    <p>Rappresentiamo i marchi più affidabili e innovativi per la ristorazione</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Precedente</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Successivo</span>
+        </button>
+    </div>
+
+    <div class="container d-flex justify-content-center align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#212529" class="bi bi-chevron-down"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+            <path fill-rule="evenodd"
+                d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+        </svg>
+    </div>
+
+
+    <div class="container d-flex flex-column justify-content-center">
+        <h1 class="mt-5 mb-5 text-center">Le nostre categorie di prodotti</h1>
+        <div class="row mb-5">
+            <div class="col-6 col-sm-4 col-md-3 mb-4">
+                <a href="https://www.borz.it/product-category/cottura/" target="_blank">
+                    <div class="card text-white bg-dark shadow-lg h-100"
+                        onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'"
+                        style="transition: transform 0.3s ease">
+                        <div class="ratio ratio-4x3">
+                            <img src="/images/card1.jpg" class="card-img" alt="Attrezzature per la cottura"
+                                style="object-fit:cover;">
+                        </div>
+                        <div class="card-img-overlay d-flex align-items-end p-0">
+                            <h5 class="card-title w-100 bg-dark bg-opacity-50 text-center m-0 py-2">Attrezzature per la
+                                cottura</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 mb-4">
+                <a href="https://www.borz.it/product-category/asciugatrici-e-lavatrici/" target="_blank">
+                    <div class="card text-white bg-dark shadow-lg h-100"
+                        onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'"
+                        style="transition: transform 0.3s ease">
+                        <div class="ratio ratio-4x3">
+                            <img src="/images/card2.jpg" class="card-img" alt="Asciugatrici e lavatrici"
+                                style="object-fit:cover;">
+                        </div>
+                        <div class="card-img-overlay d-flex align-items-end p-0">
+                            <h5 class="card-title w-100 bg-dark bg-opacity-50 text-center m-0 py-2">Asciugatrici e
+                                lavatrici</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 mb-4">
+                <a href="https://www.borz.it/product-category/refrigerazione/" target="_blank">
+                    <div class="card text-white bg-dark shadow-lg h-100"
+                        onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'"
+                        style="transition: transform 0.3s ease">
+                        <div class="ratio ratio-4x3">
+                            <img src="/images/card3.jpg" class="card-img" alt="Refrigerazione"
+                                style="object-fit:cover;">
+                        </div>
+                        <div class="card-img-overlay d-flex align-items-end p-0">
+                            <h5 class="card-title w-100 bg-dark bg-opacity-50 text-center m-0 py-2">Refrigerazione</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 mb-4">
+                <a href="https://www.borz.it/product-category/lavastoviglie/" target="_blank">
+                    <div class="card text-white bg-dark shadow-lg h-100"
+                        onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'"
+                        style="transition: transform 0.3s ease">
+                        <div class="ratio ratio-4x3">
+                            <img src="/images/card4.jpg" class="card-img" alt="Lavaggio" style="object-fit:cover;">
+                        </div>
+                        <div class="card-img-overlay d-flex align-items-end p-0">
+                            <h5 class="card-title w-100 bg-dark bg-opacity-50 text-center m-0 py-2">Lavaggio</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 mb-4">
+                <a href="https://www.borz.it/product-category/lamiere-metallo-su-misura/" target="_blank">
+                    <div class="card text-white bg-dark shadow-lg h-100"
+                        onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'"
+                        style="transition: transform 0.3s ease">
+                        <div class="ratio ratio-4x3">
+                            <img src="/images/lamiera.jpg" class="card-img" alt="Lamiere su misura"
+                                style="object-fit:cover;">
+                        </div>
+                        <div class="card-img-overlay d-flex align-items-end p-0">
+                            <h5 class="card-title w-100 bg-dark bg-opacity-50 text-center m-0 py-2">Lamiere su misura
+                            </h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 mb-4">
+                <a href="https://www.borz.it/product-category/utensili-da-cucina/" target="_blank">
+                    <div class="card text-white bg-dark shadow-lg h-100"
+                        onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'"
+                        style="transition: transform 0.3s ease">
+                        <div class="ratio ratio-4x3">
+                            <img src="/images/utensili.jpg" class="card-img" alt="Utensili da cucina"
+                                style="object-fit:cover;">
+                        </div>
+                        <div class="card-img-overlay d-flex align-items-end p-0">
+                            <h5 class="card-title w-100 bg-dark bg-opacity-50 text-center m-0 py-2">Utensili da cucina
+                            </h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 mb-4">
+                <a href="https://www.borz.it/product-category/tavola-e-buffet/" target="_blank">
+                    <div class="card text-white bg-dark shadow-lg h-100"
+                        onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'"
+                        style="transition: transform 0.3s ease">
+                        <div class="ratio ratio-4x3">
+                            <img src="/images/buffet.jpg" class="card-img" alt="Tavola e buffet"
+                                style="object-fit:cover;">
+                        </div>
+                        <div class="card-img-overlay d-flex align-items-end p-0">
+                            <h5 class="card-title w-100 bg-dark bg-opacity-50 text-center m-0 py-2">Tavola e buffet</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 mb-4">
+                <a href="https://www.borz.it/product-category/detersivi/" target="_blank">
+                    <div class="card text-white bg-dark shadow-lg h-100"
+                        onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'"
+                        style="transition: transform 0.3s ease">
+                        <div class="ratio ratio-4x3">
+                            <img src="/images/detersivi.jpg" class="card-img" alt="Detersivi" style="object-fit:cover;">
+                        </div>
+                        <div class="card-img-overlay d-flex align-items-end p-0">
+                            <h5 class="card-title w-100 bg-dark bg-opacity-50 text-center m-0 py-2">Detersivi</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-5">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <div class="col-12 col-lg-6 order-1 order-lg-2 text-center">
+                    <img src="./images/chef.jpg" alt="Chef Borz" class="img-fluid rounded shadow-lg"
+                        style="max-height:400px; width:auto;">
+                </div>
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <h1 class="display-5 mb-3">Il vostro partner per la ristorazione professionale</h1>
+                    <p class="lead mb-4">Borz è specializzato nella vendita e installazione di attrezzature
+                        professionali di alta qualità per la ristorazione.</p>
+                    <ul class="list-group list-group-flush mb-0">
+                        <li class="list-group-item ps-0 border-0 ps-lg-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fcb800"
+                                class="bi bi-people-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                            </svg> Fornitura di apparecchiature in acciaio inox per la ristorazione
+                        </li>
+                        <li class="list-group-item ps-0 border-0 ps-lg-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fcb800"
+                                class="bi bi-people-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                            </svg> Consulenza tecnica specializzata
+                        </li>
+                        <li class="list-group-item ps-0 border-0 ps-lg-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fcb800"
+                                class="bi bi-people-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                            </svg> Attrezzature certificate e di qualità superiore
+                        </li>
+                        <li class="list-group-item ps-0 border-0 ps-lg-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fcb800"
+                                class="bi bi-people-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                            </svg> Assistenza tecnica e manutenzione
+                        </li>
+                        <li class="list-group-item ps-0 border-0 ps-lg-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fcb800"
+                                class="bi bi-people-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                            </svg> Oltre 25 anni di esperienza nel settore
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid d-flex flex-column justify-content-center mt-5 mb-5 ">
+        <h1 class="mt-5 text-center">I migliori marchi del settore</h1>
+        <p class="mb-5 text-center">Rappresentiamo ufficialmente i principali brand europei per attrezzature
+            professionali di cottura e refrigerazione</p>
+        <div class="container-fluid bg-white">
+            <div class="swiper logo-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="https://www.borz.it/?s=hendi&post_type=product" target="_blank">
+                            <div class="card text-white bg-white h-100">
+                                <div class="ratio ratio-4x3">
+                                    <img src="/images/hendi.jpg" class="card-img" alt="Hendi"
+                                        style="object-fit:contain;">
+                                </div>
+                                <div class="card-img-overlay d-flex align-items-end p-0">
+                                    <h5 class="card-title w-100 bg-dark bg-opacity-50 text-center m-0 py-2">Hendi</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.borz.it/?s=kaufgut&post_type=product" target="_blank">
+                            <div class="card text-white bg-white h-100">
+                                <div class="ratio ratio-4x3">
+                                    <img src="/images/kaufgut.jpg" class="card-img" alt="Kaufgut"
+                                        style="object-fit:contain;">
+                                </div>
+                                <div class="card-img-overlay d-flex align-items-end p-0">
+                                    <h5 class="card-title w-100 bg-dark bg-opacity-50 text-center m-0 py-2">Kaufgut</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.borz.it/?s=gico&post_type=product" target="_blank">
+                            <div class="card text-white bg-white h-100">
+                                <div class="ratio ratio-4x3">
+                                    <img src="/images/gico.jpg" class="card-img" alt="Gico" style="object-fit:contain;">
+                                </div>
+                                <div class="card-img-overlay d-flex align-items-end p-0">
+                                    <h5 class="card-title w-100 bg-dark bg-opacity-50 text-center m-0 py-2">Gico</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.borz.it/?s=winterhalter&post_type=product" target="_blank">
+                            <div class="card text-white bg-white h-100">
+                                <div class="ratio ratio-4x3">
+                                    <img src="/images/winterhalter.jpg" class="card-img" alt="Winterhalter"
+                                        style="object-fit:contain;">
+                                </div>
+                                <div class="card-img-overlay d-flex align-items-end p-0">
+                                    <h5 class="card-title w-100 bg-dark bg-opacity-50 text-center m-0 py-2">Winterhalter
+                                    </h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.borz.it/?s=sanelli&post_type=product" target="_blank">
+                            <div class="card text-white bg-white h-100">
+                                <div class="ratio ratio-4x3">
+                                    <img src="/images/sanelli.jpg" class="card-img" alt="Sanelli"
+                                        style="object-fit:contain;">
+                                </div>
+                                <div class="card-img-overlay d-flex align-items-end p-0">
+                                    <h5 class="card-title w-100 bg-dark bg-opacity-50 text-center m-0 py-2">Sanelli</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.borz.it/?s=paderno&post_type=product" target="_blank">
+                            <div class="card text-white bg-white h-100">
+                                <div class="ratio ratio-4x3">
+                                    <img src="/images/paderno.jpg" class="card-img" alt="Paderno"
+                                        style="object-fit:contain;">
+                                </div>
+                                <div class="card-img-overlay d-flex align-items-end p-0">
+                                    <h5 class="card-title w-100 bg-dark bg-opacity-50 text-center m-0 py-2">Paderno</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.borz.it/?s=modular&post_type=product" target="_blank">
+                            <div class="card text-white bg-white h-100">
+                                <div class="ratio ratio-4x3">
+                                    <img src="/images/modular.jpg" class="card-img" alt="Modular"
+                                        style="object-fit:contain;">
+                                </div>
+                                <div class="card-img-overlay d-flex align-items-end p-0">
+                                    <h5 class="card-title w-100 bg-dark bg-opacity-50 text-center m-0 py-2">Modular</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.borz.it/?s=rational&post_type=product" target="_blank">
+                            <div class="card text-white bg-white h-100">
+                                <div class="ratio ratio-4x3">
+                                    <img src="/images/rational.jpg" class="card-img" alt="Rational"
+                                        style="object-fit:contain;">
+                                </div>
+                                <div class="card-img-overlay d-flex align-items-end p-0">
+                                    <h5 class="card-title w-100 bg-dark bg-opacity-50 text-center m-0 py-2">Rational
+                                    </h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-flex flex-column justify-content-center mt-5">
+        <h1 class="mt-5 text-center">Realizzazioni recenti</h1>
+        <p class="mb-5 text-center">Alcune delle nostre installazioni di attrezzature professionali realizzate per
+            clienti in tutta Italia</p>
+        <div class="container mb-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+                <div class="col">
+                    <div class="card h-100 shadow-lg" onmouseenter="this.style.transform='scale(1.05)'"
+                        onmouseleave="this.style.transform='scale(1)'" style="transition: transform 0.3s ease">
+                        <img src="./images/dulac.jpg" class="card-img-top" alt="Hotel Du Lac"
+                            style="height:220px; object-fit:cover;">
+                        <div class="card-body">
+                            <h4 class="card-title m-2 text-center">Hotel Du Lac</h4>
+                            <p class="card-text m-2">Allestimento chiavi in mano di una cucina professionale completa,
+                                con forni di ultima generazione, piani cottura modulari e sistemi di refrigerazione
+                                integrati, progettati per garantire efficienza e affidabilità in un contesto
+                                alberghiero.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-lg" onmouseenter="this.style.transform='scale(1.05)'"
+                        onmouseleave="this.style.transform='scale(1)'" style="transition: transform 0.3s ease">
+                        <img src="./images/marzadro.jpg" class="card-img-top" alt="Distillerie Marzadro"
+                            style="height:220px; object-fit:cover;">
+                        <div class="card-body">
+                            <h4 class="card-title m-2 text-center">Distillerie Marzadro</h4>
+                            <p class="card-text m-2">Fornitura e installazione su misura di banchi di lavoro in acciaio
+                                inox, unità di raffreddamento e soluzioni di stoccaggio per il processo produttivo,
+                                ottimizzando igiene, durabilità e facilità di manutenzione.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-lg" onmouseenter="this.style.transform='scale(1.05)'"
+                        onmouseleave="this.style.transform='scale(1)'" style="transition: transform 0.3s ease">
+                        <img src="./images/paludellafava.jpg" class="card-img-top" alt="Ristorante Palù della Fava"
+                            style="height:220px; object-fit:cover;">
+                        <div class="card-body">
+                            <h4 class="card-title m-2 text-center">Ristorante Palù della Fava</h4>
+                            <p class="card-text m-2">Progettazione e posa in opera di linee di cottura ad alto
+                                rendimento e celle frigorifere compatte, calibrate per le esigenze di un ristorante di
+                                montagna, con attenzione al risparmio energetico e alla continuità del servizio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5 mb-5">
+        <h1 class="mt-5 text-center">Come lavoriamo</h1>
+        <p class="mb-5 text-center">Il nostro approccio garantisce risultati impeccabili e soluzioni su misura per ogni
+            cliente</p>
+        <div class="timeline d-flex flex-column flex-lg-row justify-content-between position-relative">
+            <div class="timeline-item text-center p-3 flex-fill">
+                <div class="timeline-icon mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#fcb800"
+                        class="bi bi-chat-dots" viewBox="0 0 16 16">
+                        <path
+                            d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                        <path
+                            d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2" />
+                    </svg>
+                </div>
+                <h5 class="mb-1">Consulenza iniziale</h5>
+                <p class="mb-0">Analizziamo le tue esigenze specifiche e i requisiti della tua attività</p>
+            </div>
+            <div class="timeline-item text-center p-3 flex-fill">
+                <div class="timeline-icon mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#fcb800" class="bi bi-pencil"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+                    </svg>
+                </div>
+                <h5 class="mb-1">Progettazione</h5>
+                <p class="mb-0">Progettiamo la soluzione ideale ottimizzando spazi e flussi di lavoro</p>
+            </div>
+            <div class="timeline-item text-center p-3 flex-fill">
+                <div class="timeline-icon mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#fcb800" class="bi bi-tools"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z" />
+                    </svg>
+                </div>
+                <h5 class="mb-1">Installazione</h5>
+                <p class="mb-0">Installiamo le attrezzature con precisione e professionalità</p>
+            </div>
+            <div class="timeline-item text-center p-3 flex-fill">
+                <div class="timeline-icon mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#fcb800"
+                        class="bi bi-check-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                        <path
+                            d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                    </svg>
+                </div>
+                <h5 class="mb-1">Collaudo</h5>
+                <p class="mb-0">Verifichiamo il funzionamento e formiamo il tuo staff all'utilizzo</p>
+            </div>
+            <div class="timeline-item text-center p-3 flex-fill">
+                <div class="timeline-icon mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#fcb800" class="bi bi-earbuds"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M6.825 4.138c.596 2.141-.36 3.593-2.389 4.117a4.4 4.4 0 0 1-2.018.054c-.048-.01.9 2.778 1.522 4.61l.41 1.205a.52.52 0 0 1-.346.659l-.593.19a.55.55 0 0 1-.69-.34L.184 6.99c-.696-2.137.662-4.309 2.564-4.8 2.029-.523 3.402 0 4.076 1.948zm-.868 2.221c.43-.112.561-.993.292-1.969-.269-.975-.836-1.675-1.266-1.563s-.561.994-.292 1.969.836 1.675 1.266 1.563m3.218-2.221c-.596 2.141.36 3.593 2.389 4.117a4.4 4.4 0 0 0 2.018.054c.048-.01-.9 2.778-1.522 4.61l-.41 1.205a.52.52 0 0 0 .346.659l.593.19c.289.092.6-.06.69-.34l2.536-7.643c.696-2.137-.662-4.309-2.564-4.8-2.029-.523-3.402 0-4.076 1.948m.868 2.221c-.43-.112-.561-.993-.292-1.969.269-.975.836-1.675 1.266-1.563s.561.994.292 1.969-.836 1.675-1.266 1.563" />
+                    </svg>
+                </div>
+                <h5 class="mb-1">Assistenza</h5>
+                <p class="mb-0">Garantiamo un servizio di assistenza continua post-vendita</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-flex flex-column justify-content-center">
+        <h1 class="mt-5 mb-5 text-center">Cosa dicono i nostri clienti</h1>
+        <div class="container mb-5">
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-lg" onmouseenter="this.style.transform='scale(1.05)'"
+                        onmouseleave="this.style.transform='scale(1)'" style="transition: transform 0.3s ease">
+                        <img src="./images/polo.jpg" class="card-img-top" alt="Polo Tecnologico"
+                            style="object-fit:cover; height:200px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Polo Tecnologico</h5>
+                            <p class="card-text">La consulenza e il supporto ricevuti da Borz sono stati fondamentali
+                                per la realizzazione della nostra nuova mensa aziendale. Ottimo rapporto qualità-prezzo
+                                e tempi di realizzazione rispettati al 100%.</p>
+                            <div class="mb-2 text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fcb800"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fcb800"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fcb800"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fcb800"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fcb800"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-lg" onmouseenter="this.style.transform='scale(1.05)'"
+                        onmouseleave="this.style.transform='scale(1)'" style="transition: transform 0.3s ease">
+                        <img src="./images/riva.jpg" class="card-img-top" alt="Ermanno B."
+                            style="object-fit:cover; height:200px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Ermanno B.</h5>
+                            <p class="card-text">Prodotti ottimi, acquistati grazie al supporto on line del sito web.
+                                Consegna nei termini indicati, 24 ore da ordine confermato.</p>
+                            <div class="mb-2 text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fcb800"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fcb800"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fcb800"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fcb800"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fcb800"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-lg" onmouseenter="this.style.transform='scale(1.05)'"
+                        onmouseleave="this.style.transform='scale(1)'" style="transition: transform 0.3s ease">
+                        <img src="./images/daroberto.jpg" class="card-img-top" alt="Ristorante da Roberto"
+                            style="object-fit:cover; height:200px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Ristorante da Roberto</h5>
+                            <p class="card-text">La professionalità e la competenza del team Borz ci ha permesso di
+                                avere attrezzature professionali perfettamente funzionali e adatte alle nostre esigenze.
+                                L'efficienza e la qualità dei materiali hanno superato le nostre aspettative.</p>
+                            <div class="mb-2 text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fcb800"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fcb800"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fcb800"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fcb800"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fcb800"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="parallax-section text-white d-flex align-items-center mt-5 mb-5 shadow-lg"
+        style="background-image: url('./images/parallax.jpg'); background-attachment: fixed; background-size: cover; background-position: center; height: 65vh;">
+        <div class="container text-center">
+            <h1>Hai un progetto in mente?</h1>
+            <p class="lead">Contattaci per una consulenza gratuita e un preventivo personalizzato</p>
+            <a href="tel:+39 0464 437719" class="btn btn-progetto m-2" onmouseenter="this.style.transform='scale(1.05)'"
+                onmouseleave="this.style.transform='scale(1)'" style="transition: transform 0.3s ease">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                </svg> Chiamaci ora
+            </a>
+        </div>
+    </section>
+
+    <div class="container d-flex flex-column justify-content-center">
+        <h1 class="mt-5 text-center">Vieni a trovarci!</h1>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1389.081461990636!2d11.0146819!3d45.8680499!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47820f1dd903f80d%3A0x31cfae7b3eead874!2sBorz%20Cucine%20Industriali!5e0!3m2!1sen!2sit!4v1750763545118!5m2!1sen!2sit"
+            width="100%" height="700" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="mb-5 mt-3 shadow-lg"></iframe>
+    </div>
+
+    <footer class="footer bg-white text-dark p-5 shadow-lg mt-5">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <img src="./images/BorzLogo.png" alt="Logo Borz" class="mb-3 d-block mx-auto d-md-inline-block"
+                        style="max-width:150px;">
+                    <p class="small lh-lg mx-auto mx-md-0"> Borz è specializzato nella vendita e installazione di
+                        attrezzature professionali per la ristorazione a Rovereto (TN). Offriamo forni, lavastoviglie,
+                        apparecchiature in acciaio inox e soluzioni complete per le esigenze della ristorazione
+                        professionale.</p>
+                </div>
+
+                <div class="col-6 col-md-2 text-md-end">
+                    <h6 class="text-uppercase border-bottom pb-2 mb-3">Collegamenti</h6>
+                    <ul class="list-unstyled small">
+                        <li class="py-1">
+                            <a href="" class="text-dark text-decoration-none hover-primary">Home</a>
+                        </li>
+                        <li class="py-1">
+                            <a href="" class="text-dark text-decoration-none hover-primary">Chi siamo</a>
+                        </li>
+                        <li class="py-1">
+                            <a href="" class="text-dark text-decoration-none hover-primary">Prodotti</a>
+                        </li>
+                        <li class="py-1">
+                            <a href="" class="text-dark text-decoration-none hover-primary">Marchi</a>
+                        </li>
+                        <li class="py-1">
+                            <a href="" class="text-dark text-decoration-none hover-primary">Progetti</a>
+                        </li>
+                        <li class="py-1">
+                            <a href="" class="text-dark text-decoration-none hover-primary">Contatti</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 text-md-end">
+                    <h6 class="text-uppercase border-bottom pb-2 mb-3">Prodotti</h6>
+                    <ul class="list-unstyled small">
+                        <li class="py-1">
+                            <a href="" class="text-dark text-decoration-none hover-primary">Forni Professionali</a>
+                        </li>
+                        <li class="py-1">
+                            <a href="" class="text-dark text-decoration-none hover-primary">Lavastoviglie
+                                Industriali</a>
+                        </li>
+                        <li class="py-1">
+                            <a href="" class="text-dark text-decoration-none hover-primary">Banchi di Preparazione</a>
+                        </li>
+                        <li class="py-1">
+                            <a href="" class="text-dark text-decoration-none hover-primary">Refrigerazione</a>
+                        </li>
+                        <li class="py-1">
+                            <a href="" class="text-dark text-decoration-none hover-primary">Cappe </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 text-end">
+                    <h6 class="text-uppercase border-bottom pb-2 mb-3">Contatti</h6>
+                    <ul class="list-unstyled small">
+                        <li class="py-1">
+                            <a href="https://maps.app.goo.gl/9nsDrRk1Fke5k6z28" target="_blank"
+                                class="text-dark text-decoration-none hover-primary">Via del Garda, 42 - 38068 Rovereto
+                                (TN) <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fcb800"
+                                    class="bi bi-geo-alt-fill m-2" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                                </svg></a>
+                        </li>
+                        <li class="py-1">
+                            <a href="tel:+39 0464 437719" class="text-dark text-decoration-none hover-primary">+39 0464
+                                437719 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fcb800"
+                                    class="bi bi-telephone-fill m-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                </svg></a>
+                        </li>
+                        <li class="py-1">
+                            <a href="mailto:info@borz.it"
+                                class="text-dark text-decoration-none hover-primary">info@borz.it <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fcb800"
+                                    class="bi bi-envelope-fill m-2" viewBox="0 0 16 16">
+                                    <path
+                                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                                </svg></a>
+                        </li>
+                        <a href="https://x.com/BorzStore">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black"
+                                class="bi bi-twitter-x m-2" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/borz-cucine-industriali/?originalSubdomain=it">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#0e76a8"
+                                class="bi bi-linkedin m-2" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/borzcucine/?hl=it">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#c13584"
+                                class="bi bi-instagram m-2" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/BorzCucine/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#3b5998"
+                                class="bi bi-facebook m-2" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between small">
+                <span>&copy; 2024 Borz. P.IVA IT02389140225. All Rights Reserved.</span>
+                <span>Usiamo pagamenti sicuri e garantiti.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        new Swiper('.logo-slider', {
+            loop: true,
+            slidesPerView: 2,
+            spaceBetween: 16,
+            autoplay: {
+                delay: 0, disableOnInteraction: false
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 3
+                },
+                768: {
+                    slidesPerView: 4
+                },
+                992: {
+                    slidesPerView: 5
+                },
+                1200: {
+                    slidesPerView: 6
+                },
+            },
+            speed: 3000
+        });
+    </script>
+
+</body>
+
+</html>
