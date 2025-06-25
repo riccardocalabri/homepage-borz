@@ -46,7 +46,6 @@ a {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-/* Titoli e paragrafi più grandi su desktop */
 @media (min-width: 768px) {
     #heroCarousel .carousel-caption h2 {
         font-size: 2.5rem;
@@ -58,35 +57,42 @@ a {
 }
 
 .brand-slider {
-    overflow: hidden;
     width: 100%;
     padding: 1rem 0;
     background: #fff;
+    overflow-x: hidden;
+    height: 320px;
 }
 
 .brand-track {
     display: flex;
-    animation: scrollBrands 15s linear infinite;
+    width: max-content;
+    animation: scrollBrands 40s linear infinite;
 }
 
 .brand-slide {
     flex: 0 0 auto;
-    width: 200px;
-    margin-right: 1rem;
+    width: 250px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 .brand-slide img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
     object-fit: contain;
 }
 
 @keyframes scrollBrands {
-    from {
+    0% {
         transform: translateX(0);
     }
 
-    to {
+    100% {
         transform: translateX(-50%);
     }
 }
@@ -94,7 +100,7 @@ a {
 @media (max-width: 768px) {
     .brand-slide {
         width: 120px;
-        margin-right: 0.5rem;
+        margin-right: 1rem;
     }
 }
 
